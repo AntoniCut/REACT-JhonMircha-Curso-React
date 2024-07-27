@@ -8,6 +8,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Titulo } from './components/Titulo.jsx';
 import { ComponenteClase, ComponenteFuncional, Componente } from './components/Componente.jsx';
+import Propiedades from './components/Propiedades.jsx';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
    ];
 
    return (
-      
+
       <div className="App">
 
          <header className="App-header">
@@ -56,17 +57,36 @@ function App() {
                {estaciones.map((estacion, index) => <li key={index}> {estacion} </li>)}
             </ul>
 
+            <hr style={{ marginTop: "50px" }} />
 
-            {/* **********  2. Componentes de Clase y Funcionales  ********** */}
+            {/* **********  2. COMPONENTES de Clase y Funcionales  ********** */}
             <Titulo nameTitulo="----------  2. Componentes de Clase y Funcionales  ----------" />
 
             <ComponenteClase msg="Hola Soy un Componente de Clase" />
             <ComponenteFuncional msg="Hola Soy un Componente Funcional desde una Props" />
             <Componente msg="Soy un Componente Funcional expresado desde una Prop" />
+            <hr style={{ marginTop: "50px" }} />
 
 
+            {/* **********  3. PROPIEDADES  ********** */}
+            <Titulo nameTitulo="----------  3. Propiedades  ----------" />
 
+            <Propiedades
+               cadena="Esto es una Cadena"
+               numero={19}
+               booleano={true}
+               arreglo={[1, 2, 3]}
+               objeto={{
+                  nombre: 'Antonio',
+                  correo: 'tonifrancuti@gmail.com'
+               }}
+               funcion={numero => numero * numero}
+               reactElement={<i> Esto es un Elemento de React - JSX </i>}
+               reactComponent={<Componente msg="Soy un Componente pasado como Prop" />}
 
+            />
+
+            <hr style={{ marginTop: "50px" }} />
 
 
          </main>

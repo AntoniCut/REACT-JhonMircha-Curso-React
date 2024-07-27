@@ -55,18 +55,29 @@
   /* height: calc(100vh - 190px); */
   background-color: #282c34;
   /* border: 5px solid #61dafb ; */
+  padding-bottom: 100px;
 }
 
 label {
   color: white;
 }
 
+.titulo-contenido {
+  width: 90%;
+  height: 50px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  background-color: #61dafb;
+}
+
 .titulo {
   margin-left: 600px;
   margin-top: 50px;
-  margin-bottom: 20px;
+  
   font-size: 30px;
+  font-weight: bold;
   text-align: left;
+  color: #282c34;
 }
 
 
