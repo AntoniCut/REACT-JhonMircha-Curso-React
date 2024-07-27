@@ -3,8 +3,11 @@
 //  ***********************************
 
 
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Titulo } from './components/Titulo.jsx';
+import { ComponenteClase, ComponenteFuncional, Componente } from './components/Componente.jsx';
 
 
 function App() {
@@ -20,6 +23,7 @@ function App() {
    ];
 
    return (
+      
       <div className="App">
 
          <header className="App-header">
@@ -30,22 +34,40 @@ function App() {
             </div>
 
             <h1 className="titulo-proyecto"> React Básicos con CRA </h1>
+
          </header>
+
 
          <main className="App-main">
 
-            <br/> <br/> <br/>
+
+            {/* **********  1. Sintaxis JSX  ********** */}
+            <Titulo nameTitulo="----------  1. Sintaxis JSX  ----------" />
+
             <label> <h2> Nombre </h2> </label> <br />
             <input type="text" /> <br /> <br />
 
             <h2> {nombre} </h2>
             <p> {auth ? "El usuario esta Logeado" : "El usuario No esta Logeado"}</p>
 
-            <br/> <p> {2 + 1} </p> <br/>
+            <br /> <p> {2 + 1} </p> <br />
 
             <ul>
                {estaciones.map((estacion, index) => <li key={index}> {estacion} </li>)}
             </ul>
+
+
+            {/* **********  2. Componentes de Clase y Funcionales  ********** */}
+            <Titulo nameTitulo="----------  2. Componentes de Clase y Funcionales  ----------" />
+
+            <ComponenteClase msg="Hola Soy un Componente de Clase" />
+            <ComponenteFuncional msg="Hola Soy un Componente Funcional desde una Props" />
+            <Componente msg="Soy un Componente Funcional expresado desde una Prop" />
+
+
+
+
+
 
          </main>
 

@@ -61,6 +61,13 @@ label {
   color: white;
 }
 
+.titulo {
+  margin-left: 600px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: left;
+}
 
 
 
