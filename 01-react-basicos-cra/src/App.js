@@ -10,6 +10,8 @@ import { Titulo } from './components/Titulo.jsx';
 import { ComponenteClase, ComponenteFuncional, Componente } from './components/Componente.jsx';
 import Propiedades from './components/Propiedades.jsx';
 import Estado from './components/Estado.jsx';
+import RenderizadoCondicional from './components/RenderizadoCondicional.jsx';
+import RenderizadoElementos from './components/RenderizadoElementos.jsx';
 
 
 function App() {
@@ -91,7 +93,19 @@ function App() {
             {/* **********  3. ESTADO  ********** */}
             <Titulo nameTitulo="----------  3. El Estado  ----------" />
             <Estado />
+            <hr style={{ marginTop: "50px" }} />
 
+
+            {/* **********  4. RENDERIZADO CONDICIONAL  ********** */}
+            <Titulo nameTitulo="----------  4. Renderizado Condicional  ----------" />
+            <RenderizadoCondicional session={true} />
+            <hr style={{ marginTop: "50px" }} />
+
+
+            {/* **********  5. RENDERIZADO DE ELEMENTOS  ********** */}
+            <Titulo nameTitulo="----------  5. Renderizado de Elementos  ----------" />
+            <RenderizadoElementos/>
+            <hr style={{ marginTop: "50px" }} />
 
 
          </main>
