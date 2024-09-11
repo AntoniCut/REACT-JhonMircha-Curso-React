@@ -16,7 +16,7 @@ export default function Propiedades(props) {
 
     return (
 
-        <div>
+        <div className='componentes'>
             <h2> {props.porDefecto} </h2>
             <ul>
                 <li> props cadena: {props.cadena} </li>
@@ -35,9 +35,9 @@ export default function Propiedades(props) {
 }
 
 
-Propiedades.defaultProps = {
-    porDefecto: "Las Props"
-};
+// Propiedades.defaultProps = {
+//     porDefecto: "Las Props"
+// };
 
 Propiedades.propTypes = {
     //cadena

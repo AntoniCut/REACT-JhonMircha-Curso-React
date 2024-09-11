@@ -1,9 +1,10 @@
-//  **************************************************
-//  **********  /src/components/Estado.jsx  **********
-//  **************************************************
+//  ***********************************************************************
+//  **********  /01-react-basicos-cra/src/components/Estado.jsx  **********
+//  ***********************************************************************
 
 
 import React, { Component } from "react";
+
 
 export default class Estado extends Component {
 
@@ -25,8 +26,10 @@ export default class Estado extends Component {
 
 
     render() {
+        
         return (
-            <div>
+            
+            <div className='componentes'>
                 <h2> El State </h2>
                 <p> {this.state.contador}</p>
                 <EstadoAHijo contadorHijo={this.state.contador}/>
@@ -40,7 +43,7 @@ export default class Estado extends Component {
 function EstadoAHijo(props) {
 
     return (
-        <div>
+        <div className='componentes'>
             <h3> {props.contadorHijo} </h3>
         </div>
     )

@@ -12,12 +12,15 @@ export default class RenderizadoCondicional extends Component {
         super(props);
         this.state = {
             session: props.session
+            //session: 0
         }
     }
 
     render() {
+        
         return(
-            <div>
+            
+            <div className='componentes'>
                 <h2> Renderizado Condicional </h2>
                 
                 {/* -----  Renderizado Condicional  ----- */}

@@ -11,7 +11,11 @@ import React, {Component} from "react";
 export class ComponenteClase extends Component {
 
     render() {
-        return <h2> {this.props.msg} </h2>
+        return (
+            <div className="componentes">
+                <h2> {this.props.msg} </h2>
+            </div>
+        )
     }
 
 }
@@ -23,11 +27,23 @@ export class ComponenteClase extends Component {
  */
 export function ComponenteFuncional(props) {
 
-    return <h2> {props.msg} </h2>
+    return (
+        <div className="componentes">
+            <h2> {props.msg} </h2>
+        </div>
+        
+    )
 }
 
 
-export const Componente = props => <h2> {props.msg} </h2>
+export const Componente = props => {
+
+    return (
+        <div className="componentes">
+            <h2> {props.msg} </h2>
+        </div>
+    )
+}
 
 
 
