@@ -11,7 +11,8 @@
 /*  *****  Logo de React  *****  */
 
 .App-logo {
-    width: 300px;
+    /* width: 300px; */
+    width: calc(300px + 2vmin);
     pointer-events: none;
 }
 
@@ -44,19 +45,36 @@
     align-items: start;
     
 
-    /* font-size: calc(10px + 2vmin); */
+    font-size: calc(10px + 2vmin); 
     color: white;
     border: 5px solid #61dafb;
 }
 
 
 /*  ********************  */
+.titulo {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: #282c34;
+}
 
+.titulo-contenido {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: #61dafb;
+}
 
 .titulo-proyecto {
     /* line-height: 50px; */
     margin-left: 30px;
     line-height: 170px;
+    text-align: center;
 }
 
 .App-main {
@@ -72,31 +90,11 @@ label {
     color: white;
 }
 
-.titulo-contenido {
-    width: 90%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
 
-    /* margin-left: 100px; */
-    /* margin-bottom: 20px; */
-    background-color: #61dafb;
-}
 
-.titulo {
-    /* margin-left: 600px;
-    margin-top: 50px; */
-
-    font-size: 30px;
-    font-weight: bold;
-    text-align: left;
-    color: #282c34;
-}
 
 .componentes {
+    max-width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,3 +128,11 @@ label {
     background-color: rgb(224, 179, 179);
 }
 
+.enlinea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}

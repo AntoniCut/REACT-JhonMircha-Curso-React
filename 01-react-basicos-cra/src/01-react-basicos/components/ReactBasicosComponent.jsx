@@ -12,6 +12,7 @@ import RenderizadoElementos from './RenderizadoElementos.jsx';
 import { EventosES6, EventosES7, MasSobreEventos } from './Eventos.jsx';
 import { Padre } from './ComunicacionComponentes.jsx';
 import { CicloVida } from './CicloVida.jsx';
+import { AjaxApis } from './AjaxApis.jsx';
 
 
 export const ReactBasicosComponent = () => {
@@ -80,7 +81,7 @@ export const ReactBasicosComponent = () => {
 
             {/* **********  4. ESTADO  ********** */}
             <Titulo nameTitulo="----------  4. El Estado  ----------" />
-            <Estado />
+            {/* <Estado /> */}
 
 
             {/* **********  5. RENDERIZADO CONDICIONAL  ********** */}
@@ -107,6 +108,11 @@ export const ReactBasicosComponent = () => {
             {/* **********  9. Ciclo de Vida de los Componentes  ********** */}
             <Titulo nameTitulo="----------  9. Ciclo de Vida de los Componentes  ----------" />
             <CicloVida />
+
+
+            {/* **********  10. Peticiones Asincronas - AJAX y APIS  ********** */}
+            <Titulo nameTitulo="----------  10. Peticiones Asincronas - AJAX y APIS en Componentes de Clase ----------" />
+            <AjaxApis />
 
         </main>
     )
