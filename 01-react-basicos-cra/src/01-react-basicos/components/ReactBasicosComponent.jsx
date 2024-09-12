@@ -11,6 +11,7 @@ import RenderizadoCondicional from './RenderizadoCondicional.jsx';
 import RenderizadoElementos from './RenderizadoElementos.jsx';
 import { EventosES6, EventosES7, MasSobreEventos } from './Eventos.jsx';
 import { Padre } from './ComunicacionComponentes.jsx';
+import { CicloVida } from './CicloVida.jsx';
 
 
 export const ReactBasicosComponent = () => {
@@ -34,7 +35,7 @@ export const ReactBasicosComponent = () => {
 
             {/* **********  1. Sintaxis JSX  ********** */}
             <Titulo nameTitulo="----------  1. Sintaxis JSX  ----------" />
-            
+
             <div className='componentes'>
                 <label> <h2> Nombre </h2> </label> <br />
                 <input type="text" /> <br /> <br />
@@ -101,6 +102,11 @@ export const ReactBasicosComponent = () => {
             {/* **********  8. Comunicación entre Componentes  ********** */}
             <Titulo nameTitulo="----------  8. Comunicación entre Componentes  ----------" />
             <Padre />
+
+
+            {/* **********  9. Ciclo de Vida de los Componentes  ********** */}
+            <Titulo nameTitulo="----------  9. Ciclo de Vida de los Componentes  ----------" />
+            <CicloVida />
 
         </main>
     )
