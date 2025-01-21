@@ -5,6 +5,7 @@
 
 import React, { Component } from "react";
 import data from "../helpers/data.json";
+import { Titulo } from "./Titulo";
 
 
 export default class RenderizadoElementos extends Component {
@@ -25,6 +26,8 @@ export default class RenderizadoElementos extends Component {
         return (
 
             <div className='componentes'>
+                
+                <Titulo nameTitulo="----------  6. Renderizado de Elementos  ----------" />
                 <h2> Renderizado de Elementos </h2> <br />
                 <h3> Estaciones del Año </h3>
                 <ul>

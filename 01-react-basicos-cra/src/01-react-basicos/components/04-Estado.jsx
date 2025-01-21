@@ -4,10 +4,10 @@
 
 
 import React, { Component } from "react";
+import { Titulo } from "./Titulo";
 
 
 export default class Estado extends Component {
-
 
     constructor(props) {
 
@@ -30,6 +30,8 @@ export default class Estado extends Component {
         return (
             
             <div className='componentes'>
+
+                <Titulo nameTitulo="----------  4. El Estado  ----------" />
                 <h2> El State </h2>
                 <p> {this.state.contador}</p>
                 <EstadoAHijo contadorHijo={this.state.contador}/>

@@ -5,6 +5,7 @@
 
 import React from "react";
 import PropTypes from 'prop-types';
+import { Titulo } from "./Titulo";
 
 
 /**
@@ -17,6 +18,8 @@ export default function Propiedades(props) {
     return (
 
         <div className='componentes'>
+            
+            <Titulo nameTitulo="----------  3. Propiedades  ----------" />
             <h2> {props.porDefecto} </h2>
             <ul>
                 <li> props cadena: {props.cadena} </li>

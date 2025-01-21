@@ -4,6 +4,7 @@
 
 
 import React, {Component} from "react";
+import { Titulo } from "./Titulo";
 
 
 export default class RenderizadoCondicional extends Component {
@@ -21,6 +22,8 @@ export default class RenderizadoCondicional extends Component {
         return(
             
             <div className='componentes'>
+                
+                <Titulo nameTitulo="----------  5. Renderizado Condicional  ----------" />
                 <h2> Renderizado Condicional </h2>
                 
                 {/* -----  Renderizado Condicional  ----- */}

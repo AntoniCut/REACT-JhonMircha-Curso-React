@@ -4,6 +4,7 @@
 
 
 import React, { Component } from 'react'
+import { Titulo } from './Titulo'
 
 
 //  **********  Componente Padre de Clase  **********
@@ -26,7 +27,10 @@ export class Padre extends Component {
             <>
                 <div className='componentes'>
 
+                    <Titulo nameTitulo="----------  8. Comunicación entre Componentes  ----------" />
+
                     <h2> Comunicacion Entre Componentes </h2>
+                    
                     <Hijo incrementarContador={this.incrementarContador} mensaje='Mensaje para el hijo Nº 1'/>
                     <Hijo incrementarContador={this.incrementarContador} mensaje='Mensaje para el hijo Nº 2'/>
                     <div style={{color: 'white', fontSize: '28px'}}> {this.state.contador} </div>

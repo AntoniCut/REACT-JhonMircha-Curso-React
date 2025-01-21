@@ -4,6 +4,7 @@
 
 
 import React, { Component } from 'react'
+import { Titulo } from './Titulo';
 
 
 //  **********  EventosES6  **********
@@ -46,6 +47,8 @@ export class EventosES6 extends Component {
         return (
 
             <div className='componentes'>
+
+                <Titulo nameTitulo="----------  7. Eventos en Componentes de Clase  ----------" />
 
                 <h2> Eventos en Componentes de Clase ES6 </h2>
 

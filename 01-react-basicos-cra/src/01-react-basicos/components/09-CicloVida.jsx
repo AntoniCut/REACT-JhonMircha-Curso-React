@@ -4,6 +4,7 @@
 
 
 import React, { Component } from 'react';
+import { Titulo } from './Titulo';
 
 
 //  **********  Reloj en Version ES6  **********
@@ -20,9 +21,8 @@ class Reloj extends Component {
     render() {
 
         return (
-            <div>
-                <h2>  Reloj </h2>
-                <h3> {this.props.hora} </h3>
+            <div className='reloj'>
+                <h2>  Reloj {this.props.hora} </h2>
             </div>
         )
     }
@@ -57,12 +57,14 @@ export class CicloVida extends Component {
 
     iniciar = () => {
         this.tictac();
-        this.visible = true;
+        //this.visible = true;
+        this.setState({ visible: true });
     }
 
     detener = () => {
         clearInterval(this.temporizador);
-        this.visible = false;
+        //this.visible = false;
+        this.setState({ visible: false });
     }
 
 
@@ -85,13 +87,20 @@ export class CicloVida extends Component {
         console.warn(4, this.state.hora, "\nEl Componente se Renderiza en el DOM Dibuja");
 
         return (
+
             <div className='componentes'>
+
+                <Titulo nameTitulo="----------  9. Ciclo de Vida de los Componentes  ----------" />
+
                 <h2>  Ciclo de Vida </h2>
 
-                {this.state.visible && <Reloj hora={this.state.hora} />}
+                <span className='reloj__container'> {this.state.visible && <Reloj hora={this.state.hora} />} </span>
 
-                <button className='btnContador' onClick={this.iniciar}> Iniciar </button>
-                <button className='btnContador' onClick={this.detener}> Detener </button>
+                <div className='btns__container'>
+                    <button className='btnContador' onClick={this.iniciar}> Iniciar </button>
+                    <button className='btnContador' onClick={this.detener}> Detener </button>
+                </div>
+
             </div>
         )
     }
