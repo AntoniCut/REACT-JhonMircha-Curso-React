@@ -19,6 +19,8 @@ import { CicloVida } from './01-react-basicos/components/09-CicloVida.jsx';
 import { AjaxApis } from './01-react-basicos/components/10-AjaxApis.jsx';
 import { ContadorHooks } from './01-react-basicos/components/11-ContadorHooks.jsx';
 import { ScrollHooks } from './01-react-basicos/components/12-ScrollHooks.jsx';
+import { RelojHooks } from './01-react-basicos/components/13-RelojHooks.jsx';
+
 
 export const App = () => {
 
@@ -92,6 +94,9 @@ export const App = () => {
 
                 {/* **********  12. useEffect  ********** */}
                 <ScrollHooks />
+                <RelojHooks />
+
+                
 
             </main>
 

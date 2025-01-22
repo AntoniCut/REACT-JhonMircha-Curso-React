@@ -57,7 +57,7 @@ export const ScrollHooks = ({titulo}) => {
 
             <Titulo nameTitulo="----------  12. Scroll hooks  --  Hook  -  useEffect  ----------" />
 
-            <h2> Hooks- useEffect y el Ciclo de Vida </h2>
+            <h2> Hooks - useEffect y el Ciclo de Vida </h2>
             <div className='scroll__container'>
                 <p> Scroll Y del Navegador {scrollY}px </p>
             </div>
