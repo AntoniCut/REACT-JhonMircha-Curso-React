@@ -20,6 +20,8 @@ import { AjaxApis } from './01-react-basicos/components/10-AjaxApis.jsx';
 import { ContadorHooks } from './01-react-basicos/components/11-ContadorHooks.jsx';
 import { ScrollHooks } from './01-react-basicos/components/12-ScrollHooks.jsx';
 import { RelojHooks } from './01-react-basicos/components/13-RelojHooks.jsx';
+import { AjaxHooksFetch } from './01-react-basicos/components/14-AjaxHooksFetch.jsx';
+import { AjaxHooksAsync } from './01-react-basicos/components/15-AjaxHooksAsync.jsx';
 
 
 export const App = () => {
@@ -94,9 +96,18 @@ export const App = () => {
 
                 {/* **********  12. useEffect  ********** */}
                 <ScrollHooks />
+
+
+                {/* **********  13. useEffect  ********** */}
                 <RelojHooks />
 
-                
+
+                {/* **********  14. Peticiones Asincronas con Fetch - AJAX y APIS con Hooks  ********** */}
+                <AjaxHooksFetch />
+
+
+                {/* **********  15. Peticiones Asincronas con Async Await - AJAX y APIS con Hooks  ********** */}
+                <AjaxHooksAsync />
 
             </main>
 
