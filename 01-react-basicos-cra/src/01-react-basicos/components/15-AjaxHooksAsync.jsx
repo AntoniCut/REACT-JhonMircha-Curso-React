@@ -71,9 +71,9 @@ export const AjaxHooksAsync = () => {
 
         <div className='componentes'>
 
-            <Titulo nameTitulo="----------  15. Peticiones Asincronas con Fetch - AJAX y APIS con Hooks ----------" />
+            <Titulo nameTitulo="----------  15. Peticiones Asincronas con Async - Await - AJAX y APIS con Hooks ----------" />
 
-            <h2> AJAX y APIS con Hooks </h2>
+            <h2> AJAX y APIS con Hooks - Async Await </h2>
 
             {
                 loading

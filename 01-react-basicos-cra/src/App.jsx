@@ -22,6 +22,7 @@ import { ScrollHooks } from './01-react-basicos/components/12-ScrollHooks.jsx';
 import { RelojHooks } from './01-react-basicos/components/13-RelojHooks.jsx';
 import { AjaxHooksFetch } from './01-react-basicos/components/14-AjaxHooksFetch.jsx';
 import { AjaxHooksAsync } from './01-react-basicos/components/15-AjaxHooksAsync.jsx';
+import { HooksPersonalizados } from './01-react-basicos/components/16-HooksPersonalizados.jsx';
 
 
 export const App = () => {
@@ -108,6 +109,10 @@ export const App = () => {
 
                 {/* **********  15. Peticiones Asincronas con Async Await - AJAX y APIS con Hooks  ********** */}
                 <AjaxHooksAsync />
+
+
+                {/* **********  16. Hooks Personalizados  -  Custom Hooks  *********** */}
+                <HooksPersonalizados />
 
             </main>
 

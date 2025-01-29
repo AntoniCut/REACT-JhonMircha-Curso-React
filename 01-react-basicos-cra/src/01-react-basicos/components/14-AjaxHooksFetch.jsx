@@ -83,7 +83,7 @@ export const AjaxHooksFetch = () => {
 
             <Titulo nameTitulo="----------  14. Peticiones Asincronas con Fetch - AJAX y APIS con Hooks ----------" />
 
-            <h2> AJAX y APIS con Hooks </h2>
+            <h2> AJAX y APIS con Hooks - Fetch </h2>
 
             {
                 loading
